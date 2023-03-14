@@ -61,3 +61,17 @@ namespace AddressBook
         }
     }
 }
+ public void DeleteContact()
+        {
+            Console.WriteLine("Edit Name to Delete contact");
+            String Name = Console.ReadLine();
+            foreach (var data in addressBook)
+            { 
+                    if (data.FirstName.Equals(Name))
+                    {
+                    addressBook.Remove(data);
+                    }
+            }
+        }
+    }
+}
