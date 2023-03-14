@@ -7,6 +7,7 @@ namespace AddressBook
         {
             AddressBookMain addressbookMain = new AddressBookMain();
             addressBook.AddContact();
+            addressBook.EditContact();
             addressBook.Display();
         }
     }
